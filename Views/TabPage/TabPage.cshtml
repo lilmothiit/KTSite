@@ -1,0 +1,9 @@
+﻿@model KTSite.Models.ViewModels.TabPageViewModel
+@{
+    ViewData["Title"] = Model.Tab.Name;
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Tab.Name</h1>
+    <p style="white-space: pre-line">@Model.parsedText</p>
+</div>

@@ -1,0 +1,10 @@
+PART 1: 
+CG, D, C (x2) 
+A, CG, D, C, GC, D, C (rest) 
+
+PART 2: (after two of part 1) 
+C, B, G, C, G, E (rest) 
+C, B, G, C, B, C 
+
+PART 3: (during part 2 with lower notes) 
+E, G, D, E, G, D, E, A, G, E, G, D, C

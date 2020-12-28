@@ -1,0 +1,15 @@
+A-E° F° D-C° D° 
+G-G° F° E° 
+D-D° E 
+A A-C° G° F° E° 
+C-D° D 
+E-G° F° E°
+C-C° G F-A C°
+A-D° C° G 
+D-A G D-A E 
+F-G° F° E° 
+A-D° C° E° G 
+D-A E° D-A G° 
+A-E° F° 
+D-C° A G-G° 
+D A D° A E° A°

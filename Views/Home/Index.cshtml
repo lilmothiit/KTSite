@@ -1,0 +1,64 @@
+﻿@model KTSite.Models.ViewModels.TabViewModel
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">All Tabs</h1>
+
+    <table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Genre</th>
+            <th>Rating</th>
+            <th>Save</th>
+        </tr>
+        @foreach (var tab in Model.Tabs)
+        {
+            <tr>
+                <td>
+                    <article>
+                        <a asp-controller="TabPage"
+                           asp-action="Tab"
+                           asp-route-tabID="@tab.TabID">@tab.Name</a>
+                    </article>
+                </td>
+                <td>
+                    <article>
+                        <span>@tab.Author</span>
+                    </article>
+                </td>
+                <td>
+                    <article>
+                        <span>@tab.Genre</span>
+                    </article>
+                </td>
+                <td>
+                    <article>
+                        <span>@tab.Rating / 5</span>
+                    </article>
+                </td>
+                <td>
+                    <article>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a class="no-underline"
+                               asp-controller="Favorites"
+                               asp-action="AddTab"
+                               asp-route-tabID="@tab.TabID">❤</a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Account"
+                               asp-action="Login">❤</a>
+                        }
+                    </article>
+                </td>
+            </tr>
+        }
+    </table>
+
+</div>

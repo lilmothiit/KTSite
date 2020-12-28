@@ -1,0 +1,63 @@
+﻿@model KTSite.Models.ViewModels.UserPageViewModel
+
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+@{
+    ViewData["Title"] = User.Identity.Name;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Favorite tabs</h1>
+    @if (Model.UserTabs == null || Model.UserTabs.Count == 0)
+    {
+        <p>Sorry, it's empty here</p>
+    }
+    else
+    {
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Rating</th>
+                <th>Remove</th>
+            </tr>
+            @foreach (var tab in Model.UserTabs)
+            {
+                <tr>
+                    <td>
+                        <article>
+                            <a asp-controller="TabPage"
+                               asp-action="Tab"
+                               asp-route-tabID="@tab.TabID">@tab.Name</a>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <span>@tab.Author</span>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <span>@tab.Genre</span>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <span>@tab.Rating / 5</span>
+                        </article>
+                    </td>
+                    <td>
+                        <article>
+                            <a class="no-underline"
+                               asp-controller="Favorites"
+                               asp-action="RemoveTab"
+                               asp-route-tabID="@tab.TabID">✖</a>
+                        </article>
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+
+</div>

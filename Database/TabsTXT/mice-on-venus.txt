@@ -1,0 +1,21 @@
+C-E° C-C° G-A E-C° 
+A-C° F-C° G-A D-C° 
+F-C° F-A 
+E-E° D-G° D°° 
+C-E°° D°° C-G° 
+F-C°° A° C-E°° D°° 
+A-C°° F-C°° 
+G-C°° A° F-C°° 
+F-C°° E°° F-C°° A° 
+G-G° G A-C°° F-C°° 
+G-C°° A° F-C°° 
+D-A° C°° G-B° G° D-F° F 
+C-G° E° F-C° D° C° 
+A-E° F° G° F-E° 
+F-D° C° D° A-E° 
+C-G° E° G-D° E-E° 
+C-E°° D°° C°° C-G° 
+F-C°° A° C-E°° D°° 
+A-C°° F-C°° G-C°° A° F-C°° 
+D-A° C°° F-E°° D°° 
+C°-E°° C
